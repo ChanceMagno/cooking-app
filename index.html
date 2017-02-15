@@ -2,9 +2,90 @@
 <html>
   <head>
     <title>Cooking app</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
   </head>
   <body>
-    <h1>Cooking app</h1>
-    <script src="js/scripts.js"></script>
+    <div class="container">
+      <h1>Cooking app</h1>
+      <div class="row">
+        <div class="col-md-4 well">
+          <form id="ozToML">
+            <div class="form-group">
+              <h2>Ounces to milliliters</h2>
+              <label for="ounces">Enter a volume in ounces to convert to mL:</label>
+              <input id="ounces" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn">Submit!</button>
+          </form>
+          <div id="mlFromOz">
+          </div>
+        </div>
+        <div class="col-md-4 well">
+          <form id="mLtoOz">
+            <div class="form-group">
+              <h2>Milliliters to ounces</h2>
+              <label for="mL">Enter a volume in mL to convert to ounces:</label>
+              <input id="mL" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn">Submit!</button>
+          </form>
+          <div id="ozFromML">
+          </div>
+        </div>
+        <div class="col-md-4 well">
+          <form id="lbsToKg">
+            <div class="form-group">
+              <h2>Pounds to kilograms:</h2>
+              <label for="lbs">Enter a weight in pounds to convert to kg:</label>
+              <input id="lbs" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn">Submit!</button>
+          </form>
+          <div id="kgFromLbs">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 well">
+          <form id="kgToLbs">
+            <div class="form-group">
+              <h2>Kilograms to pounds</h2>
+              <label for="kg">Enter a weight in kg to convert to pounds:</label>
+              <input id="kg" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn">Submit!</button>
+          </form>
+          <div id="lbsFromKg">
+          </div>
+        </div>
+        <div class="col-md-4 well">
+          <form id="gallonsToLiters">
+            <div class="form-group">
+              <h2>Gallons to liters</h2>
+              <label for="gallons">Enter a volume in gallons to convert to Liters:</label>
+              <input id="gallons" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn">Submit!</button>
+          </form>
+          <div id="litersFromGallons">
+          </div>
+        </div>
+        <div class="col-md-4 well">
+          <form id="litersToGallons">
+            <div class="form-group">
+              <h2>Liters to gallons</h2>
+              <label for="liters">Enter a volume in liters to convert to gallons:</label>
+              <input id="liters" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn">Submit!</button>
+          </form>
+          <div id="gallonsFromLiters">
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
